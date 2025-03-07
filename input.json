@@ -1,0 +1,22 @@
+
+[
+  {
+      "workflow": "build",
+      "workflow_payload": {
+          "color": "blue",
+          "number": "4",
+          "buildCmd": "docker build .",
+          "ref": "main"
+      }
+  },
+  {
+      "workflow": "deploy",
+      "workflow_payload": {
+          "color": "orange",
+          "number": "7",
+          "skipIntTests": false,
+          "pods": "5",
+          "ref": "main"
+      }
+  }
+]
